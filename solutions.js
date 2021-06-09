@@ -1,7 +1,11 @@
 // Write your Solutions here!!
 function doingJavaScriptRightNow(){
     return true;
-}; // completed
+} // #1 completed
+
+function onMarsRightNow(){
+    return false;
+}// #2 completed
 
 
 
@@ -12,7 +16,7 @@ function isPositive(value){// complete
     } else {
         return false;
     }
-} // complete # 6
+} // #6 progress
 
 function isNegative(value) {// completed
     if (value < 0) {
@@ -20,4 +24,4 @@ function isNegative(value) {// completed
     } else {
         return false;
     }
-} // complete # 7
+} // #7 progress
