@@ -4,6 +4,7 @@
     <list default="true" id="5440f01a-9914-4338-9642-788ba95356c7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solutions.js" beforeDir="false" afterPath="$PROJECT_DIR$/solutions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +50,7 @@
       <recent name="C:\Users\samsc\IdeaProjects\Jasmin_101_Exercises" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.solutions.js">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -69,8 +70,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.solutions.js" />
         <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="Node.js.solutions.js" />
       </list>
     </recent_temporary>
   </component>
@@ -84,7 +85,7 @@
       <updated>1623171249984</updated>
       <workItem from="1623171251167" duration="12795000" />
       <workItem from="1623201692719" duration="20283000" />
-      <workItem from="1623277423579" duration="18634000" />
+      <workItem from="1623277423579" duration="22668000" />
     </task>
     <servers />
   </component>

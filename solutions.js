@@ -45,7 +45,7 @@ function isPositive(value){// complete
         return NaN;
     }
         return (answer > 0);
-} // #6 working
+} // #6 complete
 
 function isNegative(value) {// completed
     var answer = parseFloat(value);// parseFloat here to avoid erros
@@ -53,25 +53,37 @@ function isNegative(value) {// completed
         return NaN;
     }
     return (answer < 0);
-} // #7 progress
+} // #7 complete
 
 function isNumeric(value){
     let answer = parseFloat(value);
     return !isNaN(answer);
     //return (isNaN(i));
 
-}// #8 working
+}// #8 complete
 
 function isNotNumeric(value){
     return !isNumeric(value);
 
-}// #8 working
+}// #9 complete
 
-function isVowel(par){
-    let vowel = ['a', 'e', 'i', 'o', 'u', 'A','E','I','O','U'];
-    if (par === vowel) {
-        return true;
-    } else {
+function isVowel(vow){
+    if (typeof vow !== 'string') {
         return false;
     }
-} // #10 defined
+
+    vow = vow.toUpperCase();
+    switch (vow){
+        case 'A' :
+            return true;
+        case 'E' :
+            return true;
+        case 'I' :
+            return true;
+        case 'O' :
+            return true;
+        case 'U' :
+            return true;
+    }
+    return false;
+} // #10 complete

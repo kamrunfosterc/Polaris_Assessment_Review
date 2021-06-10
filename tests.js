@@ -1,4 +1,3 @@
-
 function getRandomIntInclusive(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -679,7 +678,7 @@ describe("Declare isVowel Function",function (){
             expect(isVowel(randomPositiveNumber)).toBeFalse();
         });
         it(`should return false when passed argument ${randomNegativeNumber}`, function () {
-            expect(isVowel(randomNegativeNumber)).toBeTrue();
+            expect(isVowel(randomNegativeNumber)).toBeFalse();
         });
         it(`should return false when passed the positive numeric string "${randomPositiveNumericString}" as an argument`, function () {
             expect(isVowel(randomPositiveNumericString)).toBeFalse();
