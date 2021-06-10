@@ -8,20 +8,15 @@ function onMarsRightNow(){
 }// #2 completed
 
 function sayHello(value){
-    if (typeof name === "string") { //could also make (typeof name === "string" && isNaN(name))
-        if(isNaN(name)){ //nested if statement
-            return "Hello, " + name + "!";
+    if (typeof(value) === "string") { //could also make (typeof name === "string" && isNaN(name))
+        if(isNaN(value)){ //nested if statement
+            return "Hello, " + value + "!";
         }
-        return "Hello, world!";// might be good with out
-
-    } return "Hello, world!";
-}
-//     if (value === 'string'){
-//         return "Hello, " + value + "!";
-//     } else {
-//         return "Hello, world!";
-//     }
-// } //#3 partially not passing "cook" for some reason
+        return "Hello, world!";
+    } else {
+        return "Hello, world!";
+    }
+} //#3 partially not passing "cook" for some reason
 
 function plusTwo(numb){
     var new_numb = Number(numb) + 2;
@@ -77,4 +72,4 @@ function isNotNumeric(i){
 
 function isVowel(par){
     // some code
-}
+} // #10 defined
