@@ -15,12 +15,12 @@ function sayHello(value){
         return "Hello, world!";
     } else {
         return "Hello, world!";
-    } //1st if statement.. if (typeof(value) === 'string && value !== '' && isNaN(value)){ // alt method
+    } //1st if statement.. if (typeof(value) === 'string' && value !== '' && isNaN(value)){ // alt method
 } //#3 complete
 
 function plusTwo(numb){
     //var new_numb = Number(numb) + 2;
-    return parseInt(numb) + 2;// simpliest way 
+    return parseInt(numb) + 2;// simpliest way
     // if (typeof numb === 'number' || NaN){
     //     return new_numb;
     // } else if(numb === 'null' || 'undeclaried'){
@@ -30,52 +30,40 @@ function plusTwo(numb){
     //     return NaN;
     // }
 
-}// partial
+}// #4 complete
 
 function addOne(value){
-   if (value) {
-       return Number(value) + 1;
-   } else {
-       return NaN;
-   }
-    // return ++value;
-}
+    return parseInt(value) + 1;
+    // best practice is to use parseFloat on this one
+}// #5 completed
 
 
 
 function isPositive(value){// complete
-    if (value > 0){
-        return true;
-    } else {
-        return false;
+    var answer = parseFloat(value);// parseFloat better than Number & parseInt here to avoid erros
+    if (isNaN(answer)){
+        return NaN;
     }
-} // #6 progress
+        return (answer > 0);
+} // #6 working
 
 function isNegative(value) {// completed
-    if (value < 0) {
-        return true;
-    } else {
-        return false;
+    var answer = parseFloat(value);// parseFloat here to avoid erros
+    if (isNaN(answer)){
+        return NaN;
     }
+    return (answer < 0);
 } // #7 progress
 
-function isNumeric(i){
-    var iNumberic = Number(i);
-    if(i === iNumberic){
-        return true;
-    }
-    if (typeof i === NaN){
-        return false;
-    }
+function isNumeric(value){
+    let answer = parseFloat(value);
+    return !isNaN(answer);
+    //return (isNaN(i));
 
 }// #8 working
 
-function isNotNumeric(i){
-    if(i !== Number(i)){
-        return false;
-    } else{
-        return NaN;
-    }
+function isNotNumeric(value){
+    return !isNumeric(value);
 
 }// #8 working
 
