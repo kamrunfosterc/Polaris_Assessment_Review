@@ -16,21 +16,28 @@ function sayHello(value){
     } else {
         return "Hello, world!";
     }
-} //#3 partially not passing "cook" for some reason
+} //#3 complete
 
 function plusTwo(numb){
     var new_numb = Number(numb) + 2;
-    if (numb === 'number'){
+
+    if (typeof numb === 'number' || NaN){
         return new_numb;
-    } else if (numb == 'undefined'){
+    } else if(numb === 'null' || 'undeclaried'){
         return NaN;
-    }else {
+    }
+    else {
         return NaN;
     }
 
-}
+}// partial
+
 function addOne(value){
-    return Number(value) + 1;
+   if (value) {
+       return Number(value) + 1;
+   } else {
+       return NaN;
+   }
     // return ++value;
 }
 
@@ -53,10 +60,12 @@ function isNegative(value) {// completed
 } // #7 progress
 
 function isNumeric(i){
-    if(i === Number(i)){
+    var iNumberic = Number(i);
+    if(i === iNumberic){
         return true;
-    } else{
-        return NaN;
+    }
+    if (typeof i === NaN){
+        return false;
     }
 
 }// #8 working
@@ -71,5 +80,10 @@ function isNotNumeric(i){
 }// #8 working
 
 function isVowel(par){
-    // some code
+    let vowel = ['a', 'e', 'i', 'o', 'u', 'A','E','I','O','U'];
+    if (par === vowel) {
+        return true;
+    } else {
+        return false;
+    }
 } // #10 defined
