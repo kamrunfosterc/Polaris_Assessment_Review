@@ -15,20 +15,20 @@ function sayHello(value){
         return "Hello, world!";
     } else {
         return "Hello, world!";
-    }
+    } //1st if statement.. if (typeof(value) === 'string && value !== '' && isNaN(value)){ // alt method
 } //#3 complete
 
 function plusTwo(numb){
-    var new_numb = Number(numb) + 2;
-
-    if (typeof numb === 'number' || NaN){
-        return new_numb;
-    } else if(numb === 'null' || 'undeclaried'){
-        return NaN;
-    }
-    else {
-        return NaN;
-    }
+    //var new_numb = Number(numb) + 2;
+    return parseInt(numb) + 2;// simpliest way 
+    // if (typeof numb === 'number' || NaN){
+    //     return new_numb;
+    // } else if(numb === 'null' || 'undeclaried'){
+    //     return NaN;
+    // }
+    // else {
+    //     return NaN;
+    // }
 
 }// partial
 
